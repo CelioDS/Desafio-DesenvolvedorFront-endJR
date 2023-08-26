@@ -1,0 +1,32 @@
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="27"
+      height="27"
+      viewBox="0 0 27 27"
+    >
+      <g
+        id="Grupo_1316"
+        data-name="Grupo 1316"
+        transform="translate(-486.051 -6)"
+      >
+        <rect
+          id="Retângulo_978"
+          data-name="Retângulo 978"
+          width="27"
+          height="27"
+          rx="5"
+          transform="translate(486.051 6)"
+          fill="#241960"
+        />
+        <g id="noun-search-1534856" transform="translate(493 13)">
+          <path
+            id="Caminho_263"
+            data-name="Caminho 263"
+            d="M118.208,47.252a5.674,5.674,0,1,0-4.463,2.162,5.721,5.721,0,0,0,3.505-1.22l3.413,3.413.973-.973Zm-4.463.818a4.293,4.293,0,1,1,4.293-4.293A4.3,4.3,0,0,1,113.745,48.071Z"
+            transform="translate(-108.078 -38.08)"
+            fill="#fff"
+          />
+        </g>
+      </g>
+    </svg>

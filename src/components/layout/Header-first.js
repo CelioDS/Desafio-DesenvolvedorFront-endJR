@@ -1,7 +1,7 @@
 import FacebookSVG from "../img/Iconfacebook";
 import InstagramSVG from "../img/Iconinstagram";
 import YoutubeSVG from "../img/Iconyoutube";
-import style from "./Header.module.css";
+import style from "./Header-first.module.css";
 import Container from "./Container";
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
           <div>
             <p>Parcelamento em ate 12x Sem juros</p>
             <p>Desconto de 10% á vista</p>
-            <p>Comptra garantida</p>
+            <p>Compra garantida</p>
           </div>
           <div>
             <a href="/">
@@ -26,6 +26,7 @@ export default function Header() {
             </a>
           </div>
         </section>
+        
       </Container>
     </header>
   );
