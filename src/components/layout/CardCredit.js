@@ -5,14 +5,12 @@ import { useState } from "react";
 
 export default function CreditCard() {
   const [nome, setNome] = useState();
-  const [numero, setNumero] = useState();
-  const [validadeMM, setValidadeMM] = useState();
-  const [validadeAA, setValidadeAA] = useState();
+  const [numero, setNumero] = useState("");
+  const [validadeMM, setValidadeMM] = useState("");
+  const [validadeAA, setValidadeAA] = useState("");
+  const [cvc, setCvc] = useState("");
 
   function formatarNumero(numero) {
-    if (typeof numero === "string") {
-      console.log("oi");
-    }
     const numeroSemEspacos = numero.replace(/\s+/g, ""); // Remove espaços existentes
     const digitosNumericos = numeroSemEspacos.replace(/\D/g, ""); // Remove caracteres não numéricos
     const gruposDe4 = digitosNumericos.match(/.{1,4}/g); // Divide em grupos de 4 dígitos
@@ -84,6 +82,7 @@ export default function CreditCard() {
                   name="validade"
                   placeholder="MM"
                   maxLength="2"
+                  value={validadeMM}
                   onChange={(e) => {
                     setValidadeMM(e.target.value.replace(/\D/g, ""));
                   }}
@@ -94,6 +93,7 @@ export default function CreditCard() {
                   id="validade"
                   name="validade"
                   maxLength="2"
+                  value={validadeAA}
                   placeholder="AA"
                   onChange={(e) => {
                     setValidadeAA(e.target.value.replace(/\D/g, ""));
@@ -107,9 +107,13 @@ export default function CreditCard() {
               <input
                 type="text"
                 id="cvc"
+                value={cvc}
                 maxLength="3"
                 name="cvc"
                 placeholder="Insira o CVC do cartão"
+                onChange={(e) => {
+                  setCvc(e.target.value.replace(/\D/g, ""));
+                }}
               />
             </div>
           </div>
