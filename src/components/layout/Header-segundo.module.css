@@ -60,7 +60,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 .sectionfirst > div:nth-child(3) > a > div > span {
   font-size: 12px;

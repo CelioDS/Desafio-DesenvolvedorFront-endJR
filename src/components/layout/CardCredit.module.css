@@ -21,7 +21,7 @@
   position: relative;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   text-align: start;
 }
 .main > div > section > img {
@@ -74,7 +74,7 @@
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
-  align-items: start;
+  align-items: flex-start;
   text-align: center;
 }
 .main > div > section:nth-child(2) h1 {
