@@ -1,0 +1,128 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+}
+.main > div {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px;
+  flex-direction: row;
+  gap: 75px;
+}
+.main > div > section {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+}
+.main > div > section > img {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+.main > div > section:nth-child(1) > div {
+  position: absolute;
+  width: 40%;
+  height: 60px;
+  top: 180px;
+  left: 29%;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.main > div > section:nth-child(1) > div > p {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+}
+.main > div > section:nth-child(1) > div > span:nth-child(2) {
+  position: absolute;
+  font-size: 12px;
+  text-transform: uppercase;
+  bottom: 5px;
+}
+.main > div > section:nth-child(1) > div > span:nth-child(3) {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 50px;
+}
+.main > div > section:nth-child(1) > div > span:nth-child(4) {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 45px;
+}
+.main > div > section:nth-child(1) > div > span:nth-child(5) {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+}
+
+.main > div > section:nth-child(2) {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  text-align: center;
+}
+.main > div > section:nth-child(2) h1 {
+  color: #292929;
+  font-size: 24px;
+}
+.main > div > section:nth-child(2) label {
+  color: #292929;
+  font-size: 16px;
+}
+.main > div > section:nth-child(2) input {
+  padding: 0 16px;
+  color: #292929;
+  font-size: 16px;
+  width: 445px;
+  height: 49px;
+  top: 1779px;
+  left: 750px;
+  width: 445px;
+  height: 49px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  opacity: 1;
+}
+.main > div > section:nth-child(2) input {
+  padding: 0 16px;
+  color: #292929;
+  font-size: 16px;
+  width: 445px;
+  height: 49px;
+  top: 1779px;
+  left: 750px;
+  width: 445px;
+  height: 49px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+  opacity: 1;
+}
+.main .boxValidade div > div > div {
+  display: flex;
+  flex-direction: column;
+}
+.main .boxValidade div > div > input:nth-child(1),
+.main .boxValidade div > div > input:nth-child(2) {
+  width: 91px;
+  height: 49px;
+}

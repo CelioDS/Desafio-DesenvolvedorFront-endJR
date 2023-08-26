@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.main > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.main > div > h1 {
+  font-size: 24px;
+  top: 641px;
+  color: #292929;
+  padding: 35px 0;
+}
+.main > div > section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  gap: 5px;
+}
+.main > div > section > div {
+  width: 255px;
+}
+.main > div > section > div > .produto {
+  display: block;
+  width: 255px;
+  height: 264px;
+}
+.main > div > section > div > h2 {
+  padding: 20px 0;
+  font-size: 16px;
+  color: #292929;
+  font-weight: normal;
+}
+.main > div > section > div > p {
+  font-size: 20px;
+  padding: 2px 0;
+  color: #292929;
+}
+
+@media (max-width: 1000px) {
+  .main > div > section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+  }
+}
