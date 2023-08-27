@@ -43,6 +43,9 @@ export default function CreditCard() {
 
             <span>{validadeAA}</span>
           </div>
+          <div>
+            <span>{cvc}</span>
+          </div>
         </section>
 
         <section>
@@ -90,8 +93,8 @@ export default function CreditCard() {
 
                 <input
                   type="text"
-                  id="validade"
-                  name="validade"
+                  id="validades"
+                  name="validades"
                   maxLength="2"
                   value={validadeAA}
                   placeholder="AA"
@@ -117,6 +120,7 @@ export default function CreditCard() {
               />
             </div>
           </div>
+          <button>Confirmar</button>
         </section>
       </Container>
     </main>

@@ -68,6 +68,23 @@
   bottom: 5px;
   right: 30px;
 }
+.main > div > section:nth-child(1) > div:nth-child(3) {
+  position: absolute;
+  top: 324px;
+  left: 92%;
+  width: 30px;
+  height: 20px;
+}
+.main > div > section:nth-child(1) > div:nth-child(3) > span {
+  color: #292929;
+  font-size: 12px;
+}
+.main > div > section:nth-child(1) > div:nth-child(2) > span:nth-child(1) {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  right: 300px;
+}
 
 .main > div > section:nth-child(2) {
   display: flex;
@@ -80,6 +97,7 @@
 .main > div > section:nth-child(2) h1 {
   color: #292929;
   font-size: 24px;
+  margin: 10px 0;
 }
 .main > div > section:nth-child(2) label {
   color: #292929;
@@ -99,17 +117,16 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #dfdfdf;
   border-radius: 10px;
-  opacity: 1;
+  margin: 10px 0;
 }
 .main > div > section:nth-child(2) input {
   padding: 0 16px;
   color: #292929;
   font-size: 16px;
-  width: 445px;
+  width: 100%;
   height: 49px;
   top: 1779px;
   left: 750px;
-  width: 445px;
   height: 49px;
   /* UI Properties */
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -117,12 +134,59 @@
   border-radius: 10px;
   opacity: 1;
 }
-.main .boxValidade div > div > div {
+.main .boxValidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: start;
+}
+.main .boxValidade > div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
 }
+.main .boxValidade div:nth-child(1) > div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.main .boxValidade div:nth-child(1) > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.main .boxValidade > div:nth-child(2) > input {
+  width: 100%;
+  height: 49px;
+}
+
 .main .boxValidade div > div > input:nth-child(1),
 .main .boxValidade div > div > input:nth-child(2) {
   width: 91px;
   height: 49px;
+}
+
+.main > div > section > button {
+  width: 230px;
+  height: 44px;
+  /* UI Properties */
+  background: #221a61 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  color: #fbfbfb;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-top: 30px;
+}
+@media (max-width: 1000px) {
+  .main > div {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
 }
