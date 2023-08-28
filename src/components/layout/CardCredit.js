@@ -64,7 +64,7 @@ export default function CreditCard() {
             type="text"
             id="name"
             name="name"
-            maxLength="30"
+            maxLength="20"
             placeholder="Insira o nome do portador do cartão"
             onChange={(e) => {
               setNome(e.target.value);
