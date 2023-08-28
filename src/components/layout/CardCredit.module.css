@@ -119,6 +119,9 @@
   border-radius: 10px;
   margin: 10px 0;
 }
+.main > div > section:nth-child(2) input::placeholder {
+ color: #C7C7C7;
+}
 .main > div > section:nth-child(2) input {
   padding: 0 16px;
   color: #292929;

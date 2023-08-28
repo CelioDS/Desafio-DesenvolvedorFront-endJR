@@ -55,6 +55,7 @@
   align-items: center;
   text-decoration: none;
   gap: 10px;
+  color: #313131;
 }
 .sectionfirst > div:nth-child(3) > a > div {
   display: flex;
