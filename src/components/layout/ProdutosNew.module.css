@@ -25,6 +25,32 @@
   width: 100%;
   gap: 5px;
   position: relative;
+  padding: 10px;
+}
+.main > div > section::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/seta.svg");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  width: 32px;
+  height: 32px;
+  bottom: 180px;
+  left: 0px;
+}
+.main > div > section::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/seta.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  transform: rotate(180deg);
+  background-position: 100%;
+  width: 32px;
+  height: 32px;
+  bottom: 180px;
+  right: 0px;
+  cursor: pointer;
 }
 .main > div > section > div {
   width: 255px;

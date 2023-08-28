@@ -86,7 +86,7 @@
   right: 300px;
 }
 
-.main > div > section:nth-child(2) {
+.main > div > form {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -94,49 +94,34 @@
   align-items: flex-start;
   text-align: center;
 }
-.main > div > section:nth-child(2) h1 {
+.main > div > form h1 {
   color: #292929;
   font-size: 24px;
   margin: 10px 0;
 }
-.main > div > section:nth-child(2) label {
+.main > div > form label {
   color: #292929;
   font-size: 16px;
 }
-.main > div > section:nth-child(2) input {
+
+
+.main > div > form input {
   padding: 0 16px;
   color: #292929;
-  font-size: 16px;
-  width: 445px;
-  height: 49px;
-  top: 1779px;
-  left: 750px;
-  width: 445px;
-  height: 49px;
-  /* UI Properties */
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #dfdfdf;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-.main > div > section:nth-child(2) input::placeholder {
- color: #C7C7C7;
-}
-.main > div > section:nth-child(2) input {
-  padding: 0 16px;
-  color: #292929;
-  font-size: 16px;
+  font: normal normal medium 14px/15px Montserrat;
+  font-size: 14px;
   width: 100%;
   height: 49px;
-  top: 1779px;
-  left: 750px;
-  height: 49px;
-  /* UI Properties */
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #dfdfdf;
   border-radius: 10px;
-  opacity: 1;
+  margin: 15px 0;  
 }
+.main > div > form input::placeholder {
+  color: #c7c7c7;
+  font-weight: normal;
+}
+
 .main .boxValidade {
   display: flex;
   justify-content: space-between;
@@ -172,7 +157,7 @@
   height: 49px;
 }
 
-.main > div > section > button {
+.main > div > form > button {
   width: 230px;
   height: 44px;
   /* UI Properties */

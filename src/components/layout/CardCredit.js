@@ -16,17 +16,20 @@ export default function CreditCard() {
     const gruposDe4 = digitosNumericos.match(/.{1,4}/g); // Divide em grupos de 4 dígitos
 
     if (gruposDe4) {
-      const numeroFormatado = gruposDe4.join(" "); // Adiciona espaços entre grupos
-      return numeroFormatado.substring(0, 19); // Limita a 19 caracteres
+      const numeroFormatado = gruposDe4.join("  "); // Adiciona espaços entre grupos
+      return numeroFormatado.substring(0, 22); // Limita a 19 caracteres
     }
 
-    return digitosNumericos.substring(0, 19); // Caso não tenha grupos de 4 dígitos
+    return digitosNumericos.substring(0, 22); // Caso não tenha grupos de 4 dígitos
   }
 
   function handleNumero(e) {
     const novoNumeroFormatado = formatarNumero(e.target.value);
 
     setNumero(novoNumeroFormatado);
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
   }
 
   return (
@@ -48,11 +51,16 @@ export default function CreditCard() {
           </div>
         </section>
 
-        <section>
+        <form
+          onSubmit={(e) => {
+            handleSubmit(e);
+          }}
+        >
           <h1>Pagamento</h1>
 
           <label htmlFor="name">Nome do portador do cartão</label>
           <input
+            required
             type="text"
             id="name"
             name="name"
@@ -64,12 +72,13 @@ export default function CreditCard() {
           />
           <label htmlFor="numero">Numero do Cartão</label>
           <input
+            required
             type="text"
             id="numero"
             name="numero"
             placeholder="Insira o numero do cartão"
             value={numero}
-            maxLength="19" // Limita a 16 caracteres
+            maxLength="22" // Limita a 16 caracteres
             onChange={(e) => {
               handleNumero(e);
             }}
@@ -80,6 +89,7 @@ export default function CreditCard() {
               <label htmlFor="validade">Validade</label>
               <div>
                 <input
+                  required
                   type="text"
                   id="validade"
                   name="validade"
@@ -92,6 +102,7 @@ export default function CreditCard() {
                 />
 
                 <input
+                  required
                   type="text"
                   id="validades"
                   name="validades"
@@ -108,6 +119,7 @@ export default function CreditCard() {
             <div>
               <label htmlFor="cvc">CVC</label>
               <input
+                required
                 type="text"
                 id="cvc"
                 value={cvc}
@@ -121,7 +133,7 @@ export default function CreditCard() {
             </div>
           </div>
           <button>Confirmar</button>
-        </section>
+        </form>
       </Container>
     </main>
   );
