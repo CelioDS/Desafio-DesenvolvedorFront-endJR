@@ -1,7 +1,6 @@
 import style from "./home.module.css";
 import slide from "../img/slide3.jpg";
-import ProdutosHight from "../layout/ProdutosHight";
-import ProdutosNew from "../layout/ProdutosNew";
+import Produtos from "../layout/Produtos";
 import CartCredit from "../layout/CardCredit";
 
 export default function Home() {
@@ -12,11 +11,9 @@ export default function Home() {
       </section>
 
       <section>
-        <ProdutosHight />
+        <Produtos />
       </section>
-      <section>
-        <ProdutosNew />
-      </section>
+
       <section>
         <CartCredit />
       </section>

@@ -1,0 +1,105 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+main > section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  gap: 5px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+main > h1 {
+  font-size: 24px;
+  top: 641px;
+  color: #292929;
+  padding: 35px 0;
+}
+
+main > section > .areaProdutos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  min-height: 300px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  filter: drop-shadow(5px 6px 10px #ccc);
+  border-radius: 5px;
+}
+main > section > .areaProdutos > h2 {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 16px;
+  color: #292929;
+  font-weight: normal;
+}
+
+TESTE {
+  border: 1px solid RED;
+  background-color: red !important;
+}
+main > section > .areaProdutos > .areaItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+main > section > .areaProdutos > .areaItem > aside {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+main > section > .areaProdutos > .areaItem > aside > p {
+  font-size: 14px;
+}
+main > section > .areaProdutos > .areaItem > aside > p > span {
+  color: #0da559;
+}
+
+main > section > .areaProdutos > .areaItem > aside > button {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  gap: 10px;
+  border-radius: 2px;
+  transition: background 0.8s;
+  font-size: 28px;
+}
+main > section > .areaProdutos > .areaItem > aside > button:hover {
+  background-color: #569e66;
+}
+main > section > .areaProdutos > .areaItem > aside > button:hover > svg {
+  display: block;
+}
+main > section > .areaProdutos > .areaItem > aside > button > svg {
+  display: block;
+}
+
+@media (max-width: 300px) {
+  main > section > .areaProdutos > .areaItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+}
