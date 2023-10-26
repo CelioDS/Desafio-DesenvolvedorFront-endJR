@@ -83,7 +83,7 @@ TESTE {
   gap: 10px;
   border-radius: 2px;
   transition: background 0.8s;
-  font-size: 28px;
+  font-size: 22px;
 }
 .main > div > section > .areaProdutos > .areaItem > aside > button:hover {
   color: #569e66;

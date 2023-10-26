@@ -14,11 +14,18 @@ export default function Carrinho() {
     window.location.reload();
   }
 
+  const subTotal = data.reduce(
+    (accumulator, current) => accumulator + current.price,
+    0
+  );
+
   return (
     <main>
       <p>colocar paginação nos produtos.</p>
+      <br />
       <p>colocar valores no carrinho e produtos</p>
-
+      <br />
+      <p>valor total: {subTotal.toFixed(2)}</p>
       <section>
         {data ? (
           data.map((item) => (

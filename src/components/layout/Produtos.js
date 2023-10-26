@@ -11,6 +11,7 @@ export default function ProdutosNew() {
   const [loading, setLoading] = useState(true);
   const [nomeProduto, setNomeProduto] = useState();
   const timeFetcch = carrinho.length > 1 ? 0 : 800;
+  
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,22 +31,24 @@ export default function ProdutosNew() {
         setData(mappedData);
         setLoading(false);
       };
-
+      console.log("api");
       fetchAPI();
     }, timeFetcch);
   }, [timeFetcch]);
 
   function handleClick(obj) {
-    const item = carrinho.find((e) => e.id === obj.id);
+    setTimeout(() => {
+      const item = carrinho.find((e) => e.id === obj.id);
 
-    if (item) {
-      const arrayFilter = carrinho.filter((e) => e.id !== obj.id);
-      setCarrinho(arrayFilter);
-      setItem("item-carrinho", arrayFilter);
-    } else {
-      setItem("item-carrinho", [...carrinho, obj]);
-      setCarrinho([...carrinho, obj]);
-    }
+      if (item) {
+        const arrayFilter = carrinho.filter((e) => e.id !== obj.id);
+        setCarrinho(arrayFilter);
+        setItem("item-carrinho", arrayFilter);
+      } else {
+        setItem("item-carrinho", [...carrinho, obj]);
+        setCarrinho([...carrinho, obj]);
+      }
+    }, 300);
   }
 
   return (
