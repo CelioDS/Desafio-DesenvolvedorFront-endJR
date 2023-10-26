@@ -15,7 +15,7 @@ status = 200
 
 [[redirects]]
   from = "/*"
-  to = "https://desafio-desenvolvedorfront-endjr.netlify.app//:splat"
+  to = "https://desafio-desenvolvedorfront-endjr.netlify.app/"
   status = 301
   force = true
 

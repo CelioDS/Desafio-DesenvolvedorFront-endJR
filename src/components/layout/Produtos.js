@@ -11,12 +11,11 @@ export default function ProdutosNew() {
   const [loading, setLoading] = useState(true);
   const [nomeProduto, setNomeProduto] = useState();
   const timeFetcch = carrinho.length > 1 ? 0 : 800;
-  
 
   useEffect(() => {
     setTimeout(() => {
       const fetchAPI = async () => {
-        const API = "https://api.mercadolibre.com/sites/MLB/search?q=celular";
+        const API = "https://api.mercadolibre.com/sites/MLB/search?q=moeda";
         const response = await fetch(API);
         const OBJJson = await response.json();
 
