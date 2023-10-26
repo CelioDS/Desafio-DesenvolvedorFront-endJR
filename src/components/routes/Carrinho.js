@@ -20,16 +20,14 @@ export default function Carrinho() {
   );
 
   return (
-    <main>
+    <main className={style.carrinhoMain}>
       <section>
         <p>colocar paginação nos produtos.</p>
         <h2>Carrinho de compras</h2>
         <br />
         <p>valor total: {subTotal.toFixed(2)}</p>
       </section>
-
       <section>
-        <h2>Seus itens</h2>
         {data ? (
           data.map((item) => (
             <div key={item.id} className={style.areaProdutos}>

@@ -15,7 +15,7 @@ export default function ProdutosNew() {
   useEffect(() => {
     setTimeout(() => {
       const fetchAPI = async () => {
-        const API = "https://api.mercadolibre.com/sites/MLB/search?q=moeda";
+        const API = "https://api.mercadolibre.com/sites/MLB/search?q=celular";
         const response = await fetch(API);
         const OBJJson = await response.json();
 
@@ -30,7 +30,7 @@ export default function ProdutosNew() {
         setData(mappedData);
         setLoading(false);
       };
-      console.log("api");
+
       fetchAPI();
     }, timeFetcch);
   }, [timeFetcch]);

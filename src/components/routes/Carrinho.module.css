@@ -1,4 +1,4 @@
-main {
+.carrinhoMain {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -6,7 +6,7 @@ main {
   min-height: 80vh;
   position: relative;
 }
-main section:nth-child(1) {
+.carrinhoMain section:nth-child(1) {
   position: fixed;
   width: 50%;
   height: 70vh;
@@ -17,7 +17,7 @@ main section:nth-child(1) {
   flex-wrap: wrap;
   border: 1px solid #ccc;
 }
-main section:nth-child(2) {
+.carrinhoMain section:nth-child(2) {
   margin-left: 50%;
   display: flex;
   align-items: center;
@@ -31,14 +31,14 @@ main section:nth-child(2) {
   flex-wrap: wrap;
 }
 
-main > h1 {
+.carrinhoMain > h1 {
   font-size: 24px;
   top: 641px;
   color: #292929;
   padding: 35px 0;
 }
 
-main > section > .areaProdutos {
+.carrinhoMain > section > .areaProdutos {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -50,7 +50,7 @@ main > section > .areaProdutos {
   filter: drop-shadow(5px 6px 10px #ccc);
   border-radius: 5px;
 }
-main > section > .areaProdutos > h2 {
+.carrinhoMain > section > .areaProdutos > h2 {
   width: 100%;
   padding: 20px 0;
   font-size: 16px;
@@ -62,13 +62,13 @@ TESTE {
   border: 1px solid RED;
   background-color: red !important;
 }
-main > section > .areaProdutos > .areaItem {
+.carrinhoMain > section > .areaProdutos > .areaItem {
   display: flex;
   align-items: center;
   width: 100%;
   flex-direction: row;
 }
-main > section > .areaProdutos > .areaItem > aside {
+.carrinhoMain > section > .areaProdutos > .areaItem > aside {
   display: flex;
   flex-basis: 50%;
   align-items: center;
@@ -76,14 +76,14 @@ main > section > .areaProdutos > .areaItem > aside {
   justify-content: space-between;
   padding: 5px;
 }
-main > section > .areaProdutos > .areaItem > aside > p {
+.carrinhoMain > section > .areaProdutos > .areaItem > aside > p {
   font-size: 14px;
 }
-main > section > .areaProdutos > .areaItem > aside > p > span {
+.carrinhoMain > section > .areaProdutos > .areaItem > aside > p > span {
   color: #0da559;
 }
 
-main > section > .areaProdutos > .areaItem > aside > button {
+.carrinhoMain > section > .areaProdutos > .areaItem > aside > button {
   display: flex;
   padding: 15px;
   justify-content: space-between;
@@ -97,18 +97,18 @@ main > section > .areaProdutos > .areaItem > aside > button {
   transition: background 0.8s;
   font-size: 28px;
 }
-main > section > .areaProdutos > .areaItem > aside > button:hover {
+.carrinhoMain > section > .areaProdutos > .areaItem > aside > button:hover {
   background-color: #569e66;
 }
-main > section > .areaProdutos > .areaItem > aside > button:hover > svg {
+.carrinhoMain > section > .areaProdutos > .areaItem > aside > button:hover > svg {
   display: block;
 }
-main > section > .areaProdutos > .areaItem > aside > button > svg {
+.carrinhoMain > section > .areaProdutos > .areaItem > aside > button > svg {
   display: block;
 }
 
 @media (max-width: 300px) {
-  main > section > .areaProdutos > .areaItem {
+  .carrinhoMain > section > .areaProdutos > .areaItem {
     display: flex;
     align-items: center;
     width: 100%;
