@@ -21,12 +21,15 @@ export default function Carrinho() {
 
   return (
     <main>
-      <p>colocar paginação nos produtos.</p>
-      <br />
-      <p>colocar valores no carrinho e produtos</p>
-      <br />
-      <p>valor total: {subTotal.toFixed(2)}</p>
       <section>
+        <p>colocar paginação nos produtos.</p>
+        <h2>Carrinho de compras</h2>
+        <br />
+        <p>valor total: {subTotal.toFixed(2)}</p>
+      </section>
+
+      <section>
+        <h2>Seus itens</h2>
         {data ? (
           data.map((item) => (
             <div key={item.id} className={style.areaProdutos}>
