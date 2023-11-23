@@ -34,10 +34,11 @@ export default function Header() {
   ];
 
   useEffect(() => {
-    setInterval(() => {
+   const loop =  setInterval(() => {
       const randomNum = Math.floor(Math.random() * anuncios.length) - 0;
       setTextAnuncio(anuncios[randomNum]);
     }, 10000);
+    clearInterval(loop)
   });
 
   return (

@@ -71,7 +71,7 @@ export default function ProdutosNew() {
 
                   <aside>
                     <p>
-                      <s style={{ color: "#e71919", fontSize: "13px" }}>
+                      <s style={{ color: "#CCC", fontSize: "13px" }}>
                         {(item.price + (item.price * 21) / 100).toFixed(2)}
                       </s>
                       <br />
