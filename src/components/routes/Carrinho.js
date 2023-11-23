@@ -1,5 +1,5 @@
 import { getItem, setItem } from "../service/LocalStorage";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { BsFillTrashFill } from "react-icons/bs";
 import style from "./Carrinho.module.css";
 import Loadings from "../layout/Loading";
