@@ -10,7 +10,7 @@
   opacity: 1;
   font: normal normal normal 12px/15px Montserrat;
   font-size: 12px !important;
-  height: 30px;
+  min-height: 30px;
 }
 .sectionfirst > div {
   width: 100%;
@@ -120,6 +120,28 @@
   height: 43px;
   background-color: #52bbb7;
 }
+.sectionthird div > select {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #52bbb7;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+.sectionthird div > select > option {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  border: none !important;
+  outline: none !important;
+}
 .sectionthird a {
   text-decoration: none;
   font-size: 14px;
@@ -142,4 +164,21 @@
   font-size: 13px;
   background-color: #ff0000;
   overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .sectionfirst {
+    min-height: 40px;
+  }
+  .sectionsecond > div > div:nth-child(2) {
+    width: 40px;
+  }
+  .sectionsecond > div > div > input {
+    display: flex;
+    width: 40px;
+    height: 39px;
+  }
+  .sectionsecond > div > div:nth-child(2)::before {
+    left: 6px !important;
+  }
 }

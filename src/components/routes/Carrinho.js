@@ -1,5 +1,5 @@
 import { getItem, setItem } from "../service/LocalStorage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsFillTrashFill } from "react-icons/bs";
 import style from "./Carrinho.module.css";
 import Loadings from "../layout/Loading";
@@ -11,7 +11,6 @@ export default function Carrinho() {
     const newData = data.filter((e) => e.id !== obj.id);
     setdata(newData);
     setItem("item-carrinho", newData);
-    window.location.reload();
   }
 
   const subTotal = data.reduce(

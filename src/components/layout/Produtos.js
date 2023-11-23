@@ -10,44 +10,40 @@ export default function ProdutosNew() {
   const [carrinho, setCarrinho] = useState(getItem("item-carrinho") || []);
   const [loading, setLoading] = useState(true);
   const [nomeProduto, setNomeProduto] = useState();
-  const timeFetcch = carrinho.length > 1 ? 0 : 800;
 
   useEffect(() => {
-    setTimeout(() => {
-      const fetchAPI = async () => {
-        const API = "https://api.mercadolibre.com/sites/MLB/search?q=celular";
-        const response = await fetch(API);
-        const OBJJson = await response.json();
+    const fetchAPI = async () => {
+      const API =
+        "https://api.mercadolibre.com/sites/MLB/search?q=celular&limit=2";
+      const response = await fetch(API);
+      const OBJJson = await response.json();
 
-        const mappedData = OBJJson.results.map((item) => ({
-          id: item.id,
-          title: item.title,
-          thumbnail: item.thumbnail,
-          price: item.price,
-        }));
+      const mappedData = OBJJson.results.map((item) => ({
+        id: item.id,
+        title: item.title,
+        thumbnail: item.thumbnail,
+        price: item.price,
+      }));
 
-        setNomeProduto(OBJJson.query);
-        setData(mappedData);
-        setLoading(false);
-      };
+      setNomeProduto(OBJJson.query);
+      setData(mappedData);
+      setLoading(false);
+    };
 
-      fetchAPI();
-    }, timeFetcch);
-  }, [timeFetcch]);
+    fetchAPI();
+  }, []);
 
   function handleClick(obj) {
-    setTimeout(() => {
-      const item = carrinho.find((e) => e.id === obj.id);
+    const item = carrinho.find((e) => e.id === obj.id);
 
-      if (item) {
-        const arrayFilter = carrinho.filter((e) => e.id !== obj.id);
-        setCarrinho(arrayFilter);
-        setItem("item-carrinho", arrayFilter);
-      } else {
-        setItem("item-carrinho", [...carrinho, obj]);
-        setCarrinho([...carrinho, obj]);
-      }
-    }, 300);
+    if (item) {
+      const arrayFilter = carrinho.filter((e) => e.id !== obj.id);
+      setCarrinho(arrayFilter);
+      setItem("item-carrinho", arrayFilter);
+    } else {
+      setItem("item-carrinho", [...carrinho, obj]);
+      setCarrinho([...carrinho, obj]);
+    }
   }
 
   return (
