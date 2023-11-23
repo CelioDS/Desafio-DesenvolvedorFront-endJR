@@ -38,7 +38,7 @@ export default function Header() {
       const randomNum = Math.floor(Math.random() * anuncios.length) - 0;
       setTextAnuncio(anuncios[randomNum]);
     }, 10000);
-    clearInterval(loop)
+    return clearInterval(loop)
   });
 
   return (
