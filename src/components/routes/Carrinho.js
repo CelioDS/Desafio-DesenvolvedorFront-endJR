@@ -69,6 +69,7 @@ export default function Carrinho() {
           </span>
         )}
       </section>
+      
     </main>
   );
 }

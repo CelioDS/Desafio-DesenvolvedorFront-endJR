@@ -13,22 +13,27 @@ export default function ProdutosNew() {
 
   useEffect(() => {
     const fetchAPI = async () => {
-      const API =
-        "https://api.mercadolibre.com/sites/MLB/search?q=celular&limit=2";
-      const response = await fetch(API);
-      const OBJJson = await response.json();
+      try {
+        const API =
+          "https://api.mercadolibre.com/sites/MLB/search?q=celular&limit=2";
+        const response = await fetch(API);
+        const OBJJson = await response.json();
 
-      const mappedData = OBJJson.results.map((item) => ({
-        id: item.id,
-        title: item.title,
-        thumbnail: item.thumbnail,
-        price: item.price,
-      }));
+        const mappedData = OBJJson.results.map((item) => ({
+          id: item.id,
+          title: item.title,
+          thumbnail: item.thumbnail,
+          price: item.price,
+        }));
 
-      setNomeProduto(OBJJson.query);
-      setData(mappedData);
-      setLoading(false);
+        setNomeProduto(OBJJson.query);
+        setData(mappedData);
+        setLoading(false);
+      } catch (error) {
+        console.error("Erro ao buscar dados:", error);
+      }
     };
+
 
     fetchAPI();
   }, []);
