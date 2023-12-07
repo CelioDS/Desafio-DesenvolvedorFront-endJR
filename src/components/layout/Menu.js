@@ -34,12 +34,13 @@ export default function Header() {
   ];
 
   useEffect(() => {
-   const loop =  setInterval(() => {
+    setInterval(() => {
       const randomNum = Math.floor(Math.random() * anuncios.length) - 0;
       setTextAnuncio(anuncios[randomNum]);
     }, 10000);
-    return clearInterval(loop)
-  });
+
+    console.log("d")
+  }, []);
 
   return (
     <header className={style.header}>
@@ -99,7 +100,6 @@ export default function Header() {
               </div>
             </Link>
           </div>
-          
         </Container>
       </section>
 
