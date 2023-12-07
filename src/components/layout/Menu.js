@@ -27,6 +27,7 @@ export default function Header() {
     "SEO",
     "Inbound",
   ];
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const anuncios = [
     "Parcelamento em ate 12x Sem juros",
     "Desconto de 10% á vista",
@@ -39,8 +40,8 @@ export default function Header() {
       setTextAnuncio(anuncios[randomNum]);
     }, 10000);
 
-    console.log("d")
-  }, []);
+    console.log("teste")
+  }, [anuncios]);
 
   return (
     <header className={style.header}>
